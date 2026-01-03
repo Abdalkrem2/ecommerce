@@ -146,12 +146,12 @@ http.headers(headers ->headers.frameOptions(
             // Create users if not already present
 
             if (!userRepository.existsByUsername("customer")) {
-                User customer = new User("customer", "customer@example.com", passwordEncoder.encode("customer"));
+                User customer = new User("abdalkrem","ali","customer", "customer@example.com","00899938822",passwordEncoder.encode("customer"));
                 userRepository.save(customer);
             }
 
             if (!userRepository.existsByUsername("admin")) {
-                User admin = new User("admin", "admin@example.com", passwordEncoder.encode("admin"));
+                User admin = new User("abdalkrem","ali","admin", "admin@example.com","00899938821", passwordEncoder.encode("admin"));
                 userRepository.save(admin);
             }
 
