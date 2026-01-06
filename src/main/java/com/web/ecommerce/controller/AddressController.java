@@ -1,6 +1,6 @@
 package com.web.ecommerce.controller;
 
-import com.web.ecommerce.dto.AddressDTO;
+import com.web.ecommerce.dto.address.AddressDTO;
 import com.web.ecommerce.service.AddressService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

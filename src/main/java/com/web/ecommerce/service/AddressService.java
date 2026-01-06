@@ -1,6 +1,6 @@
 package com.web.ecommerce.service;
 
-import com.web.ecommerce.dto.AddressDTO;
+import com.web.ecommerce.dto.address.AddressDTO;
 
 import java.util.List;
 

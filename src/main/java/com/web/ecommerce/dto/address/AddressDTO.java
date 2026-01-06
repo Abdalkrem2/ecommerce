@@ -1,4 +1,4 @@
-package com.web.ecommerce.dto;
+package com.web.ecommerce.dto.address;
 import lombok.Data;
 @Data
 public class AddressDTO {

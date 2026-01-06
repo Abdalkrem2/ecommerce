@@ -1,6 +1,5 @@
 package com.web.ecommerce.repository;
 
-import com.web.ecommerce.dto.AddressDTO;
 import com.web.ecommerce.model.Address;
 import com.web.ecommerce.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
