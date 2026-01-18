@@ -5,8 +5,7 @@ import com.web.ecommerce.exceptions.APIException;
 import com.web.ecommerce.model.Address;
 import com.web.ecommerce.model.User;
 import com.web.ecommerce.repository.AddressRepository;
-import com.web.ecommerce.repository.UserRepository;
-import com.web.ecommerce.security.jwt.JwtUtils;
+
 import com.web.ecommerce.service.AddressService;
 import com.web.ecommerce.util.AuthUtil;
 import org.modelmapper.ModelMapper;
@@ -20,10 +19,7 @@ import java.util.stream.Collectors;
 public class AddressServiceImp implements AddressService {
     @Autowired
     AddressRepository addressRepository;
-    @Autowired
-    UserRepository userRepository;
-    @Autowired
-    JwtUtils jwtUtils;
+
     @Autowired
     private ModelMapper modelMapper;
     @Autowired

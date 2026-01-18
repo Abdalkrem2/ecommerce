@@ -45,6 +45,9 @@ public class Product {
     @JoinColumn(name = "category_id", nullable = false)
     private Category category;
 
+    @OneToMany(mappedBy = "product")
+    private List<CartItem> cartItems = new ArrayList<>();
+
     @CreationTimestamp
     private Instant createdAt;
 

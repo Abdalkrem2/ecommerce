@@ -60,7 +60,7 @@ public class WebSecurityConfig {
     //وظيفته: يستقبل Authentication (مثلاً username + password) ويحاول يعمل authenticate باستخدام الـ AuthenticationProvider المسجّل (زي DaoAuthenticationProvider).
 
     @Bean
-    public AuthenticationManager authenticationManager(AuthenticationConfiguration authConfig) throws Exception {
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration authConfig)  {
         return authConfig.getAuthenticationManager();
     }
 
@@ -71,7 +71,7 @@ public class WebSecurityConfig {
     }
 
     @Bean
-    SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+    SecurityFilterChain filterChain(HttpSecurity http)  {
         http.csrf(AbstractHttpConfigurer::disable)
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()))
                 .exceptionHandling(exception->exception.authenticationEntryPoint(unauthorizedHandler))

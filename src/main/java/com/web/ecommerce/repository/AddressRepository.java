@@ -11,7 +11,7 @@ import java.util.List;
 public interface AddressRepository extends JpaRepository<Address, Long> {
     Iterable<Long> user(User user);
 
-    List<Address> findAddressesByUserUserId(Long userUserId);
+
 
     List<Address> findAllByUser(User user);
 

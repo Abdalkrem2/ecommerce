@@ -18,7 +18,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.stream.Collectors;
+
 
 @Service
 public class ProductServiceImp implements ProductService {
@@ -121,8 +121,7 @@ public class ProductServiceImp implements ProductService {
         product.setStockQuantity(productRequest.getStockQuantity());
         product.setActive(productRequest.getActive());
         Product updatedProduct=productRepository.save(product);
-        ProductResponse productResponse=modelMapper.map(updatedProduct, ProductResponse.class);
-        return productResponse;
+        return modelMapper.map(updatedProduct, ProductResponse.class);
     }
 
 
