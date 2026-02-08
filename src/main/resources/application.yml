@@ -8,8 +8,22 @@ spring:
     console:
       enabled: true
   datasource:
-    url : jdbc:h2:mem:test
+    url : jdbc:mysql://localhost:3306/ecommerce_v2?createDatabaseIfNotExist=true&serverTimezone=Asia/Amman
+    username: root
+    password: P@ssw0rd
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+
   app :
     jwtSecret : SGVsbG9Xb3JsZFRoaXNJc0FTZWNyZXRLZXlGb3JKV1RUb2tlbkdlbmVyYXRpb25XaXRoU3ByaW5nQm9vdA==
     jwtExpirationMs: 30000000
     jwtCookieName: springBootEcom
+
+
+
